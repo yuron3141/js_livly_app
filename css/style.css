@@ -3,20 +3,24 @@
     margin:0px auto;
     padding:0px;
     position:relative;
+    width: 200px;
+    height: 180px;
 
     display: inline-block;
 }
 
 #livly iframe { 
+    position: absolute;
     width:200px;
     height:180px; /* フレームの大きさ */
     border:none; /* フレームの枠線指定 */
     user-select: none;
 }
+/*持ち手*/
 #livly #grip{
     position: absolute;
-    width:200px;
-    height:180px; /* フレームの大きさ */
+    width:180px;
+    height:150px; /* フレームの大きさ */
     left:0px; top:0px; /* 紫の枠の位置調整。青い枠の左上基点 */
     user-select: none;
     -moz-user-select: none; /* Firefox */
@@ -24,19 +28,27 @@
     -ms-user-select: none; /* IE10かららしい */
 
 }
+/* 非表示 */
+.none{
+    display: none;
+}
+/* 表示 */
+.disp{
+    display: inline-block;
+}
+
+/*■左右反転*/
+.svg-right{
+    transform: scale(-1,1);
+}
+    
+.svg-left{
+    transform: scale(1,1);
+}
 
 .island {
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../imgs/island.png");
-}
-
-/*■左右反転*/
-.svg-icon{
-transform: scale(-1,1);
-}
-
-.svg-icon2{
-transform: scale(1,1);
 }
